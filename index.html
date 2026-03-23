@@ -13,7 +13,6 @@
     --rose:#C4837A;--rose-light:#FAF0EE;--rose-mid:#DDA89F;
     --cream:#faf7f2;--text:#2C2C2A;--text-muted:#5F5E5A;
     --border:#D3D1C7;
-    --rg-bg:linear-gradient(135deg,#FAE8D0,#F5D5B0,#FAE8D0);
     --rg-border:#C9956A;--rg-text:#8B5E3C;
   }
   body{font-family:Georgia,'Times New Roman',serif;color:var(--text);background:var(--cream);font-size:16px;line-height:1.7}
@@ -38,13 +37,11 @@
   .btn-at:hover{background:var(--turq-dark)}
   .pill{font-family:sans-serif;font-size:12px;padding:4px 12px;border-radius:20px;border:0.5px solid #9B8EC4;color:#6B5CA5;background:#F0EEFA}
 
-  /* Hero */
   #hero{padding:7rem 2rem 5rem;max-width:1100px;margin:0 auto;text-align:center}
   .hero-tagline{font-size:clamp(.95rem,1.4vw,1.15rem);color:var(--text-muted);font-family:'Barlow Condensed',sans-serif;margin:1rem auto 2rem;max-width:560px;font-weight:300;line-height:1.6;letter-spacing:.12em;text-transform:uppercase}
   .hero-roles{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem;justify-content:center}
   .hero-img{width:320px;max-width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;margin:2.5rem auto 0;display:block;border:3px solid var(--lav-mid)}
 
-  /* About */
   #about{background:white;max-width:100%;padding:5rem 2rem}
   .about-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:5rem;align-items:start}
   .bio-text{font-size:1.05rem;color:var(--text);line-height:1.8;margin-bottom:1rem}
@@ -56,7 +53,6 @@
   .tl-title{font-size:.95rem;font-weight:500;font-family:sans-serif;color:var(--text)}
   .tl-sub{font-size:.875rem;color:var(--text-muted);font-family:sans-serif}
 
-  /* Projects */
   section{padding:5rem 2rem;max-width:1100px;margin:0 auto}
   .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
   .project-card{border-radius:8px;overflow:hidden;border:0.5px solid var(--border);background:white;transition:transform .2s}
@@ -68,20 +64,17 @@
   .project-title{font-size:1rem;margin-bottom:.4rem}
   .project-desc{font-family:sans-serif;font-size:13px;color:var(--text-muted);line-height:1.5}
 
-  /* Offerings */
   #offerings{background:var(--turq-light);max-width:100%;padding:5rem 2rem}
   .offerings-inner{max-width:1100px;margin:0 auto}
-  .offerings-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
+  .offerings-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
   .offering-card{background:white;border-radius:8px;overflow:hidden;border:0.5px solid var(--border);display:flex;flex-direction:column}
   .offering-img{width:100%;height:180px;object-fit:cover;display:block}
   .offering-img-placeholder{width:100%;height:180px;display:flex;align-items:center;justify-content:center;font-family:sans-serif;font-size:12px;color:rgba(255,255,255,.7)}
   .offering-body{padding:1.25rem;flex:1;display:flex;flex-direction:column}
-  .offering-icon{width:32px;height:32px;border-radius:6px;margin-bottom:.75rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
   .offering-title{font-family:sans-serif;font-size:.9rem;font-weight:500;margin-bottom:.4rem}
   .offering-desc{font-family:sans-serif;font-size:13px;color:var(--text-muted);line-height:1.5;flex:1}
 
-  /* Futura Caribe */
-  #futura{background:var(--rg-bg);max-width:100%;padding:5rem 2rem}
+  #futura{background:linear-gradient(135deg,#FAE8D0,#F5D5B0,#FAE8D0);max-width:100%;padding:5rem 2rem}
   .futura-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
   .radio-embed{background:white;border-radius:8px;padding:2rem;border:0.5px solid var(--rg-border);text-align:center}
   .radio-placeholder{width:100%;height:120px;border-radius:6px;background:linear-gradient(135deg,#C9956A,#8B5E3C);display:flex;align-items:center;justify-content:center;color:white;font-family:sans-serif;font-size:13px;margin-bottom:1rem}
@@ -90,7 +83,6 @@
   .platform-pill{font-family:sans-serif;font-size:12px;padding:6px 14px;border-radius:20px;border:0.5px solid var(--rg-border);color:var(--rg-text);text-decoration:none;transition:all .2s}
   .platform-pill:hover{background:#C9956A;color:white}
 
-  /* Dharma */
   #dharma{background:var(--lav-light);max-width:100%;padding:5rem 2rem}
   .dharma-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
   .dharma-brand-img{width:100%;border-radius:8px;margin-bottom:1.5rem}
@@ -102,7 +94,6 @@
   .btn-lav-outline{background:transparent;border:0.5px solid var(--lav);color:var(--lav-dark);padding:8px 20px;border-radius:4px;font-family:sans-serif;font-size:13px;text-decoration:none;display:inline-block;margin-top:1rem;transition:all .2s}
   .btn-lav-outline:hover{background:var(--lav);color:white}
 
-  /* Credentials */
   #credentials{background:white;max-width:100%;padding:5rem 2rem}
   .credentials-inner{max-width:1100px;margin:0 auto}
   .cred-tabs{display:flex;gap:1rem;margin-bottom:2rem;border-bottom:0.5px solid var(--border)}
@@ -111,7 +102,7 @@
   .cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1.25rem}
   .cert-card{border:0.5px solid var(--border);border-radius:8px;padding:1.25rem;background:var(--cream);text-align:center;transition:transform .2s}
   .cert-card:hover{transform:translateY(-2px)}
-  .cert-badge{width:64px;height:64px;border-radius:8px;margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;font-family:sans-serif;font-size:10px;color:var(--text-muted);border:0.5px dashed var(--border);background:white;object-fit:contain}
+  .cert-badge{width:64px;height:64px;border-radius:8px;margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;font-family:sans-serif;font-size:10px;color:var(--text-muted);border:0.5px dashed var(--border);background:white}
   .cert-name{font-family:sans-serif;font-size:13px;font-weight:500;color:var(--text);margin-bottom:.3rem;line-height:1.3}
   .cert-org{font-family:sans-serif;font-size:11px;color:var(--text-muted)}
   .cert-year{font-family:sans-serif;font-size:11px;color:var(--turq);margin-top:.3rem}
@@ -123,7 +114,6 @@
   .grant-amount{font-family:sans-serif;font-size:13px;color:#8B5E3C;font-weight:500;white-space:nowrap}
   .hidden{display:none}
 
-  /* Contact */
   #contact{background:var(--turq);max-width:100%;padding:5rem 2rem}
   .contact-inner{max-width:700px;margin:0 auto;text-align:center}
   #contact h2,#contact p{color:white}
@@ -143,9 +133,11 @@
   footer a:hover{opacity:1;color:white}
   .footer-links{margin-bottom:.75rem;display:flex;justify-content:center;flex-wrap:wrap;gap:.25rem}
 
+  @media(max-width:900px){.offerings-grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:720px){
     .about-inner,.futura-inner,.dharma-inner{grid-template-columns:1fr}
     .form-row{grid-template-columns:1fr}
+    .offerings-grid{grid-template-columns:1fr}
     nav ul{gap:1rem}
   }
 </style>
@@ -168,7 +160,7 @@
   <div class="label">K. Fleur</div>
   <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(5rem,14vw,11rem);line-height:.9;letter-spacing:.06em;background:linear-gradient(135deg,#e8d5f5 0%,#c084fc 20%,#d8b4fe 35%,#c084fc 45%,#e9d5ff 50%,#c084fc 55%,#d8b4fe 65%,#a855f7 80%,#e8d5f5 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 1px rgba(192,132,252,.6)) drop-shadow(0 0 3px rgba(192,132,252,.3));margin-bottom:.25rem">K.FLEUR</div>
   <h1 style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(1rem,2.2vw,1.5rem);font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted);margin-bottom:1.5rem">Exploring Creativity, Community, and Black Futurity</h1>
-  <p class="hero-tagline">Artist &nbsp;·&nbsp; Sound Practitioner &nbsp;·&nbsp; Storyteller &nbsp;·&nbsp; Meditation Facilitator &nbsp;·&nbsp; Creative Director</p>
+  <p class="hero-tagline">Artist &nbsp;·&nbsp; Sound Practitioner &nbsp;·&nbsp; Storyteller &nbsp;·&nbsp; Meditation Facilitator</p>
   <div class="hero-roles">
     <span class="pill">Sound Healing</span>
     <span class="pill">Immersive Installation</span>
@@ -187,40 +179,40 @@
     <div>
       <div class="label">About</div>
       <h2>Creative Research Journey</h2>
-      <p class="bio-text">K. Fleur is a multidisciplinary artist, sound practitioner, and storyteller whose practice lives at the intersection of sound, ritual, speculative storytelling, and Caribbean futurity. She holds an MFA in Design Media Arts and a VR Storytelling Fellowship from UNCSA.</p>
-      <p class="bio-text">Her work asks what it means to inhabit liminal space between cultures, timelines, and frequencies, and invites audiences into immersive encounters with those thresholds. Through teaching, facilitation, and creative collaboration, she brings that same quality of attention to the people and projects she works with.</p>
+      <p class="bio-text">K. Fleur is an interdisciplinary artist, sound practitioner, and cultural architect with 15 years building immersive installations, spatial audio environments, and cultural platforms at the intersection of Afro-Caribbean diasporic research and emerging technology.</p>
+      <p class="bio-text">She holds an MFA from UCLA Design Media Arts, where she was an Alissa Bierra Graduate Fellow in Black Feminist Research, and a VR Storytelling Fellowship from UNCSA. Her work has been supported by the California Arts Council, Rauschenberg/NYFA, and the American Craft Council, among others.</p>
     </div>
     <div>
       <div class="timeline">
         <div class="tl-item">
           <div class="tl-dot"></div>
-          <div class="tl-year">Present</div>
-          <div class="tl-title">Futura Caribe</div>
-          <div class="tl-sub">Afro-Caribbean cultural platform and radio</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-year">Present</div>
-          <div class="tl-title">Dharma for the Diaspora</div>
-          <div class="tl-sub">Sound healing and meditation community</div>
+          <div class="tl-year">2020 — Present</div>
+          <div class="tl-title">Futura Caribe / K.FLEUR</div>
+          <div class="tl-sub">Founder, Afro-Caribbean cultural platform and radio</div>
         </div>
         <div class="tl-item">
           <div class="tl-dot"></div>
           <div class="tl-year">2024</div>
           <div class="tl-title">LIMINOIRE</div>
-          <div class="tl-sub">Immersive installation at Alabaster Gallery</div>
+          <div class="tl-sub">Immersive sound healing environment, Black Pacifica / The Black Image Center</div>
         </div>
         <div class="tl-item">
           <div class="tl-dot"></div>
-          <div class="tl-year">UNCSA</div>
+          <div class="tl-year">2022 — 2024</div>
+          <div class="tl-title">MFA, Design Media Arts</div>
+          <div class="tl-sub">UCLA · Alissa Bierra Graduate Fellow in Black Feminist Research</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2021 — 2022</div>
           <div class="tl-title">VR Storytelling Fellowship</div>
-          <div class="tl-sub">University of North Carolina School of the Arts</div>
+          <div class="tl-sub">UNCSA Film School / METL, Kenan Institute Fellow</div>
         </div>
         <div class="tl-item">
           <div class="tl-dot"></div>
-          <div class="tl-year">MFA</div>
-          <div class="tl-title">Design Media Arts</div>
-          <div class="tl-sub">Graduate studies in immersive and interdisciplinary art</div>
+          <div class="tl-year">2013</div>
+          <div class="tl-title">BS, Interactive Media and Performance Structures</div>
+          <div class="tl-sub">Brooklyn College</div>
         </div>
       </div>
     </div>
@@ -234,7 +226,7 @@
   <h2>Work</h2>
   <div class="projects-grid">
     <div class="project-card">
-      <img src="liminoire.jpg" alt="LIMINOIRE" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\' style=\'background:linear-gradient(135deg,#BDB2E0,#9B8EC4)\'>[ Add image ]</div>'">
+      <img src="liminoire.jpg" alt="LIMINOIRE" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\' style=\'background:linear-gradient(135deg,#BDB2E0,#9B8EC4)\'>[ image ]</div>'">
       <div class="project-body">
         <div class="project-tag">Immersive Installation · 2024</div>
         <h3 class="project-title">LIMINOIRE</h3>
@@ -242,15 +234,15 @@
       </div>
     </div>
     <div class="project-card">
-      <img src="unfinished-business.jpg" alt="Unfinished Business" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\' style=\'background:linear-gradient(135deg,#DDA89F,#C4837A)\'>[ Add image ]</div>'">
+      <img src="unfinished-business.jpg" alt="Unfinished Business" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\' style=\'background:linear-gradient(135deg,#DDA89F,#C4837A)\'>[ image ]</div>'">
       <div class="project-body">
-        <div class="project-tag">Immersive Installation · Ongoing</div>
+        <div class="project-tag">Immersive Installation · 2023</div>
         <h3 class="project-title">Unfinished Business</h3>
-        <p class="project-desc">[ Add a description for Unfinished Business here ]</p>
+        <p class="project-desc">An immersive installation presented at New Wight Gallery, exploring the weight of incomplete narratives and inherited memory.</p>
       </div>
     </div>
     <div class="project-card">
-      <img src="futura-caribe.jpg" alt="Futura Caribe" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\' style=\'background:linear-gradient(135deg,#F5D5B0,#C9956A)\'>[ Add image ]</div>'">
+      <img src="futura-caribe.jpg" alt="Futura Caribe" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\' style=\'background:linear-gradient(135deg,#F5D5B0,#C9956A)\'>[ image ]</div>'">
       <div class="project-body">
         <div class="project-tag">Cultural Platform · Ongoing</div>
         <h3 class="project-title">Futura Caribe</h3>
@@ -258,7 +250,7 @@
       </div>
     </div>
     <div class="project-card">
-      <img src="dharma.jpg" alt="Dharma for the Diaspora" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\' style=\'background:linear-gradient(135deg,#BDB2E0,#9B8EC4)\'>[ Add image ]</div>'">
+      <img src="dharma.jpg" alt="Dharma for the Diaspora" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\' style=\'background:linear-gradient(135deg,#BDB2E0,#9B8EC4)\'>[ image ]</div>'">
       <div class="project-body">
         <div class="project-tag">Community · Ongoing</div>
         <h3 class="project-title">Dharma for the Diaspora</h3>
@@ -267,6 +259,14 @@
     </div>
     <div class="project-card">
       <div class="project-img-placeholder" style="background:linear-gradient(135deg,#48CAE4,#00B4D8)">[ Add image ]</div>
+      <div class="project-body">
+        <div class="project-tag">Virtual Activation · 2020</div>
+        <h3 class="project-title">Into the Afrofuture</h3>
+        <p class="project-desc">A virtual sound and vision activation created with Black Quantum Futurism for Black Womxn Time Camp, weaving sonic ritual into speculative Black futures.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-img-placeholder" style="background:linear-gradient(135deg,#BDB2E0,#6B5CA5)">[ Add image ]</div>
       <div class="project-body">
         <div class="project-tag">VR / Immersive</div>
         <h3 class="project-title">Immersive Lab</h3>
@@ -282,44 +282,8 @@
   <div class="offerings-inner">
     <div class="label">Work With Me</div>
     <h2>Creative Offerings</h2>
-    <p style="font-family:sans-serif;font-size:.95rem;color:var(--text-muted);max-width:640px;margin-bottom:2rem;line-height:1.7">Available for booking and collaboration across sound, education, creative strategy, and beyond. Each offering is rooted in years of professional practice and a commitment to purposeful, community-centered work.</p>
+    <p style="font-family:sans-serif;font-size:.95rem;color:var(--text-muted);max-width:640px;margin-bottom:2rem;line-height:1.7">Available for booking and collaboration across sound, education, and creative strategy. Each offering is rooted in years of professional practice and a commitment to purposeful, community-centered work.</p>
     <div class="offerings-grid">
-
-      <div class="offering-card">
-        <img src="photo-kfleur.jpg" alt="Sound Healing" class="offering-img" onerror="this.outerHTML='<div class=\'offering-img-placeholder\' style=\'background:linear-gradient(135deg,#48CAE4,#00B4D8)\'>[ Add image ]</div>'">
-        <div class="offering-body">
-          <div class="offering-title">Sound Healing and Meditation</div>
-          <div class="offering-desc">One-on-one and group sessions blending sound frequencies, breathwork, and guided meditation for deep rest and realignment.</div>
-          <a href="https://calendly.com/metlvrevent/15-minute-consultation" target="_blank" class="btn-book">Book a Consultation</a>
-        </div>
-      </div>
-
-      <div class="offering-card">
-        <div class="offering-img-placeholder" style="background:linear-gradient(135deg,#F5D5B0,#C9956A)">[ Add DJ image ]</div>
-        <div class="offering-body">
-          <div class="offering-title">DJ and Performance</div>
-          <div class="offering-desc">Curated sonic journeys for events, ceremonies, gallery openings, and cultural gatherings. Specializing in Afro-Caribbean and diasporic frequencies.</div>
-          <a href="https://calendly.com/metlvrevent/15-minute-consultation" target="_blank" class="btn-book">Book a Consultation</a>
-        </div>
-      </div>
-
-      <div class="offering-card">
-        <div class="offering-img-placeholder" style="background:linear-gradient(135deg,#BDB2E0,#9B8EC4)">[ Add image ]</div>
-        <div class="offering-body">
-          <div class="offering-title">Creative Direction</div>
-          <div class="offering-desc">Concept development, brand identity, and artistic direction for immersive experiences, cultural projects, and creative ventures.</div>
-          <a href="https://calendly.com/metlvrevent/15-minute-consultation" target="_blank" class="btn-book">Book a Consultation</a>
-        </div>
-      </div>
-
-      <div class="offering-card">
-        <div class="offering-img-placeholder" style="background:linear-gradient(135deg,#DDA89F,#C4837A)">[ Add image ]</div>
-        <div class="offering-body">
-          <div class="offering-title">Teaching and Facilitation</div>
-          <div class="offering-desc">University-level instruction and workshop facilitation in design media arts, storytelling, and interdisciplinary creative practice.</div>
-          <a href="https://calendly.com/metlvrevent/15-minute-consultation" target="_blank" class="btn-book">Book a Consultation</a>
-        </div>
-      </div>
 
       <div class="offering-card">
         <img src="photo-kfleur.jpg" alt="Business English and AI Literacy" class="offering-img" onerror="this.outerHTML='<div class=\'offering-img-placeholder\' style=\'background:linear-gradient(135deg,#48CAE4,#0077A8)\'>[ Add image ]</div>'">
@@ -339,6 +303,24 @@
         </div>
       </div>
 
+      <div class="offering-card">
+        <img src="photo-kfleur.jpg" alt="Sound Healing" class="offering-img" onerror="this.outerHTML='<div class=\'offering-img-placeholder\' style=\'background:linear-gradient(135deg,#48CAE4,#00B4D8)\'>[ Add image ]</div>'">
+        <div class="offering-body">
+          <div class="offering-title">Sound Healing and Meditation</div>
+          <div class="offering-desc">One-on-one and group sessions blending sound frequencies, breathwork, and guided meditation for deep rest and realignment.</div>
+          <a href="https://calendly.com/metlvrevent/15-minute-consultation" target="_blank" class="btn-book">Book a Consultation</a>
+        </div>
+      </div>
+
+      <div class="offering-card">
+        <div class="offering-img-placeholder" style="background:linear-gradient(135deg,#F5D5B0,#C9956A)">[ Add DJ image ]</div>
+        <div class="offering-body">
+          <div class="offering-title">DJ and Performance</div>
+          <div class="offering-desc">Curated sonic journeys for events, ceremonies, gallery openings, and cultural gatherings. Specializing in Afro-Caribbean and diasporic frequencies.</div>
+          <a href="https://calendly.com/metlvrevent/15-minute-consultation" target="_blank" class="btn-book">Book a Consultation</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -354,15 +336,14 @@
       <p style="font-family:sans-serif;font-size:.95rem;color:var(--text-muted);line-height:1.7;margin-bottom:1.5rem">An Afro-Caribbean sonic universe. Futura Caribe is a cultural platform and radio station centering Caribbean futurity, Black diasporic creativity, and the frequencies that carry us forward.</p>
       <div class="platform-links">
         <a href="https://www.mixcloud.com/karine-fleurima/" target="_blank" class="platform-pill">Mixcloud</a>
-        <a href="#" class="platform-pill">Caster.fm</a>
         <a href="https://www.youtube.com/@FuturaCaribe" target="_blank" class="platform-pill">YouTube</a>
-        <a href="#" class="platform-pill">Substack</a>
+        <a href="https://substack.com/@kfleur99" target="_blank" class="platform-pill">Substack</a>
         <a href="https://www.instagram.com/wikkid_fleur" target="_blank" class="platform-pill">Instagram</a>
       </div>
     </div>
     <div class="radio-embed">
-      <div class="radio-placeholder">[ Radio Futura Caribe embed ]</div>
-      <div style="font-family:sans-serif;font-size:12px;color:var(--text-muted)">Paste your Caster.fm or Mixcloud embed code here</div>
+      <div class="radio-placeholder">[ Paste Mixcloud embed here ]</div>
+      <div style="font-family:sans-serif;font-size:12px;color:var(--text-muted);margin-top:.5rem">To embed: go to Mixcloud, open a set, click Share, then Embed, and paste the iframe code here</div>
     </div>
   </div>
 </div>
@@ -425,27 +406,27 @@
       <div class="cert-grid">
         <div class="cert-card">
           <div class="cert-badge">[ Logo ]</div>
-          <div class="cert-name">VR Storytelling Fellowship</div>
-          <div class="cert-org">UNCSA</div>
-          <div class="cert-year">Add year</div>
+          <div class="cert-name">Meditation Teacher Certification</div>
+          <div class="cert-org">Dharma Moon at Tibet House</div>
+          <div class="cert-year">2024</div>
         </div>
         <div class="cert-card">
           <div class="cert-badge">[ Logo ]</div>
-          <div class="cert-name">MFA Design Media Arts</div>
-          <div class="cert-org">Graduate Studies</div>
-          <div class="cert-year">Add year</div>
+          <div class="cert-name">WEHO Artist Bootcamp</div>
+          <div class="cert-org">West Hollywood</div>
+          <div class="cert-year">2024</div>
         </div>
         <div class="cert-card">
           <div class="cert-badge">[ Logo ]</div>
-          <div class="cert-name">[ Certification Name ]</div>
-          <div class="cert-org">Issuing Organization</div>
-          <div class="cert-year">Year</div>
+          <div class="cert-name">Creative Catalyst Entrepreneur Certificate</div>
+          <div class="cert-org">Kenan Institute</div>
+          <div class="cert-year">2021</div>
         </div>
         <div class="cert-card">
           <div class="cert-badge">[ Logo ]</div>
-          <div class="cert-name">[ Certification Name ]</div>
-          <div class="cert-org">Issuing Organization</div>
-          <div class="cert-year">Year</div>
+          <div class="cert-name">The Business of Art Certificate</div>
+          <div class="cert-org">CCI</div>
+          <div class="cert-year">2018</div>
         </div>
       </div>
     </div>
@@ -454,34 +435,58 @@
         <div class="grant-item">
           <div class="grant-badge">[ Logo ]</div>
           <div>
-            <div class="grant-name">[ Grant Name ]</div>
-            <div class="grant-org">Organization · Year</div>
-          </div>
-          <div class="grant-amount">[ Amount ]</div>
-        </div>
-        <div class="grant-item">
-          <div class="grant-badge">[ Logo ]</div>
-          <div>
-            <div class="grant-name">Delfina Foundation x El Espacio 23</div>
-            <div class="grant-org">Residency · Applied</div>
-          </div>
-          <div class="grant-amount">Residency</div>
-        </div>
-        <div class="grant-item">
-          <div class="grant-badge">[ Logo ]</div>
-          <div>
-            <div class="grant-name">CCF Art for Change</div>
-            <div class="grant-org">California Community Foundation · Applied</div>
+            <div class="grant-name">CERF+ Grant</div>
+            <div class="grant-org">American Craft Council · 2025</div>
           </div>
           <div class="grant-amount">Grant</div>
         </div>
         <div class="grant-item">
           <div class="grant-badge">[ Logo ]</div>
           <div>
-            <div class="grant-name">[ Add Grant or Award ]</div>
-            <div class="grant-org">Organization · Year</div>
+            <div class="grant-name">Emerging Artist Grant</div>
+            <div class="grant-org">California Arts Council · 2023</div>
           </div>
-          <div class="grant-amount">[ Amount ]</div>
+          <div class="grant-amount">Grant</div>
+        </div>
+        <div class="grant-item">
+          <div class="grant-badge">[ Logo ]</div>
+          <div>
+            <div class="grant-name">Rauschenberg Grant</div>
+            <div class="grant-org">NYFA · 2021</div>
+          </div>
+          <div class="grant-amount">Grant</div>
+        </div>
+        <div class="grant-item">
+          <div class="grant-badge">[ Logo ]</div>
+          <div>
+            <div class="grant-name">NET/TEN Grant</div>
+            <div class="grant-org">2021</div>
+          </div>
+          <div class="grant-amount">Grant</div>
+        </div>
+        <div class="grant-item">
+          <div class="grant-badge">[ Logo ]</div>
+          <div>
+            <div class="grant-name">Caribbean Cultural Center DEAR Fellowship</div>
+            <div class="grant-org">Caribbean Cultural Center · 2021</div>
+          </div>
+          <div class="grant-amount">Fellowship</div>
+        </div>
+        <div class="grant-item">
+          <div class="grant-badge">[ Logo ]</div>
+          <div>
+            <div class="grant-name">Pivotal Fund Grant</div>
+            <div class="grant-org">VAE Raleigh · 2020</div>
+          </div>
+          <div class="grant-amount">Grant</div>
+        </div>
+        <div class="grant-item">
+          <div class="grant-badge">[ Logo ]</div>
+          <div>
+            <div class="grant-name">Creative Capacity Fund</div>
+            <div class="grant-org">CCI LA · 2018</div>
+          </div>
+          <div class="grant-amount">Grant</div>
         </div>
       </div>
     </div>
@@ -494,7 +499,7 @@
   <div class="contact-inner">
     <div class="label" style="color:rgba(255,255,255,.6)">Get in Touch</div>
     <h2 style="color:white;margin-bottom:.5rem">Booking and Contact</h2>
-    <p>Available for sound healing sessions, DJ sets, creative direction, English tutoring, grant writing support, and collaboration.</p>
+    <p>Available for sound healing sessions, DJ sets, English tutoring, grant writing support, and collaboration.</p>
     <div class="contact-form">
       <div class="form-row">
         <div class="form-field">
@@ -511,10 +516,8 @@
         <select>
           <option>Sound healing and meditation</option>
           <option>DJ and performance booking</option>
-          <option>Creative direction</option>
           <option>Business English and AI Literacy</option>
           <option>Grant writing assistance</option>
-          <option>Teaching and facilitation</option>
           <option>Press and collaboration</option>
           <option>Other</option>
         </select>
@@ -528,7 +531,7 @@
     <div class="social-links">
       <a href="https://www.instagram.com/wikkid_fleur" target="_blank" class="social-link">Instagram</a>
       <a href="https://www.mixcloud.com/karine-fleurima/" target="_blank" class="social-link">Mixcloud</a>
-      <a href="#" class="social-link">Substack</a>
+      <a href="https://substack.com/@kfleur99" target="_blank" class="social-link">Substack</a>
       <a href="https://www.youtube.com/@FuturaCaribe" target="_blank" class="social-link">YouTube</a>
       <a href="https://www.linkedin.com/in/karine-fleurima/" target="_blank" class="social-link">LinkedIn</a>
     </div>
